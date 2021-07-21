@@ -1,11 +1,6 @@
 # Disaster-Responses-Pipeline
-![alt text](https://github.com/[blessokeke]/[Disaster-Response-Pipeline]/blob/[main]/disaster-response-project2.png?raw=true)
-<img
-src=“images/disaster-response-project2.png”
-raw=true
-alt=“Subject Pronouns”
-style=“margin-right: 10px;”
-/>
+
+https://github.com/blessokeke/Disaster-Responses-Pipeline/blob/main/images/disaster_response.png
 
 ## Project Overview
 This project focuses on analyzing disaster data from [Figure Eight](https://appen.com/) to build a model for an API that classifies disaster message. The dataset contains real messages that were sent during a disaster e.g earthquake or tsunami. 
