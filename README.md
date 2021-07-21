@@ -6,9 +6,14 @@ In this project, I will be creating a machine learning pipeline to categorize th
 
 ## File Description
 This project is divided into 3 components.
-1. **ETL Pipeline:** This loads the messages and categories datasets, merges both datasets, cleans them and stores it in a SQLite database. The python script `process_data.py` contains the code.
-2. **ML Pipeline:** This part loads the data from the SQLite database, splits the dataset into training and test sets. It also builds a text processing and machine learning pipeline, trains and tunes the model using GridSearchCV. It then outputs the results on the test set and exports the final model as a pickle file. The python script `train_classifier.py` contains the code.
-3. **Flask Web App:** This contains the python script `run.py` to initiate the web app.
+1. **ETL Pipeline:** This loads the messages and categories datasets, merges both datasets, cleans them and stores it in a SQLite database. 
+    - The `disaster_messages.csv` and `disaster_categories.csv` contains the disaster messages and categories respectively.
+    - The python script `process_data.py` contains the code.
+    - `DisasterResponse.db` is the output generated from process_data.py
+3. **ML Pipeline:** This part loads the data from the SQLite database, splits the dataset into training and test sets. It also builds a text processing and machine learning pipeline, trains and tunes the model using GridSearchCV. It then outputs the results on the test set and exports the final model as a pickle file. 
+    - The python script `train_classifier.py` contains the code.
+    - `classifier.pkl` is the output pickle fine generated from train_classifier.py
+5. **Flask Web App:** This contains the python script `run.py` to initiate the web app.
 
 ## How to run the python scripts
 To run the python scripts, follow the instructions below:
@@ -16,6 +21,9 @@ To run the python scripts, follow the instructions below:
 2. For the ML pipeline, run the **train_classifier.py** script. Run `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 3. For the web app, go to the app's directory and run `python run.py`
 4. Go to http://0.0.0.0:3001/ Or Go to http://localhost:3001/
+
+### Acknowledgment
+Many thanks to Udacity for giving me an opportunity to try out real world problems. Thanks to the udacity mentors for their support as well as Data Scientists who have inspired and provided insights to me through Github and StackOverflow.
 
 
 
