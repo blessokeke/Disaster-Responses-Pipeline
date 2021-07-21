@@ -25,5 +25,6 @@ To run the python scripts, follow the instructions below:
 ### Acknowledgment
 Many thanks to Udacity for giving me an opportunity to try out real world problems. Thanks to the udacity mentors for their support as well as Data Scientists who have inspired and provided insights to me through Github and StackOverflow.
 
+This project was completed as part of the [Udacity Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025) program.
 
 
