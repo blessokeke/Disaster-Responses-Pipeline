@@ -6,10 +6,16 @@ In this project, I will be creating a machine learning pipeline to categorize th
 
 ## File Description
 This project is divided into 3 components.
-1. ETL Pipeline: This loads the messages and categories datasets, merges both datasets, cleans them and stores it in a SQLite database. The python script `process_data.py` contains the code.
-2. ML Pipeline: This part loads the data from the SQLite database, splits the dataset into training and test sets. It also builds a text processing and machine learning pipeline, trains and tunes the model using GridSearchCV, outputs the results on the test set and exports the final model as a pickle file. The python script `train_classifier.py` contains the code.
-3. Flask Web App: This contains the python script `run.py` to initiate the web app.
+1. **ETL Pipeline:** This loads the messages and categories datasets, merges both datasets, cleans them and stores it in a SQLite database. The python script `process_data.py` contains the code.
+2. **ML Pipeline:** This part loads the data from the SQLite database, splits the dataset into training and test sets. It also builds a text processing and machine learning pipeline, trains and tunes the model using GridSearchCV. It then outputs the results on the test set and exports the final model as a pickle file. The python script `train_classifier.py` contains the code.
+3. **Flask Web App:** This contains the python script `run.py` to initiate the web app.
 
 ## How to run the python scripts
+To run the python scripts, follow the instructions below:
+1. For the ETL pipeline, run the **process_data.py:** script. In your terminal, run the command `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv DisasterResponse.db`
+2. For the ML pipeline, run the **train_classifier.py** script. Run `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+3. For the web app, go to the app's directory and run `python run.py`
+4. Go to http://0.0.0.0:3001/ Or Go to http://localhost:3001/
+
 
 
