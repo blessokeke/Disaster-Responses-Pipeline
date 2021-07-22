@@ -26,11 +26,11 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///../data/YourDatabaseName.db')
-df = pd.read_sql_table('YourTableName', engine)
+engine = create_engine('sqlite:///../data/DisasterResponse.db')
+df = pd.read_sql_table('data/DisasterResponse.db', engine)
 
 # load model
-model = joblib.load("../models/your_model_name.pkl")
+model = joblib.load("../models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
@@ -45,7 +45,57 @@ def index():
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
+    # visual1 for category counts
+    category_name = df.iloc[:,4:].sum()
+    category_name = category_name.sort_values(ascending=False)
+    category = list(category_name.index)
+    
+    # visual2 for distribution of message categories
+    category_cols = df.iloc[:,4:].columns
+    category_vals = (df.iloc[:,4:] !=0).sum().values
+    
     graphs = [
+         # visual1 for distribution of message categories
+        {
+            'data': [
+                Bar(
+                    x=category_cols,
+                    y=category_vals
+                )
+            ],
+
+            'layout': {
+                'title': 'Message Category Distribution',
+                'yaxis': {
+                    'title': "Counts"
+                },
+                'xaxis': {
+                    'title': "Categories",
+                    'tickangle': 30
+                }
+            }
+        },
+        # visual2 for category counts
+        {
+            'data': [
+                Bar(
+                    x=category,
+                    y=category_name
+                )
+            ],
+
+            'layout': {
+                'title': 'Message Category Counts',
+                'yaxis': {
+                    'title': "Counts"
+                },
+                'xaxis': {
+                    'title': "Categories",
+                    'tickangle': 25
+                }
+            }
+        },
+       # example visual for the distribution of message genre
         {
             'data': [
                 Bar(
@@ -64,6 +114,7 @@ def index():
                 }
             }
         }
+       
     ]
     
     # encode plotly graphs in JSON
