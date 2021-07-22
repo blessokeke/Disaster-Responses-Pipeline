@@ -20,10 +20,16 @@ This project is divided into 3 components.
 
 ## How to run the python scripts
 To run the python scripts, follow the instructions below:
-1. For the ETL pipeline, run the **process_data.py:** script. In your terminal, run the command `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv DisasterResponse.db`
+1. For the ETL pipeline, run the **process_data.py:** script. In your terminal, run the command `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
 2. For the ML pipeline, run the **train_classifier.py** script. Run `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
-3. For the web app, go to the app's directory and run `python run.py`
-4. Go to http://0.0.0.0:3001/ Or Go to http://localhost:3001/
+3. For the web app, you could run it from your local machine or from the Udacity workspace.
+#### For Local Machine
+1. Run the command `python run.py`
+2. Go to `http://localhost:3001` to view the app.
+#### For Udacity Workspace 
+1. Go to the app's directory and run `python run.py`
+2. Open another terminal window and type `env|grep WORK`. The output would look like so `viewxxxxxxxx`
+3. Open a new web brower window and type `https://SPACEID-3001.SPACEDOMAIN`. Insert your SPACEID and SPACEDOMAIN from step 4 above to view the app.
 
 ### Acknowledgment
 Many thanks to Udacity for giving me an opportunity to try out real world problems. Thanks to the udacity mentors for their support as well as Data Scientists who have inspired and provided insights to me through Github and StackOverflow.
