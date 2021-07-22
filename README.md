@@ -41,4 +41,5 @@ This project was completed as part of the [Udacity Data Scientist Nanodegree](ht
 Below are some visuals from my web app.
 ![image2](https://github.com/blessokeke/Disaster-Responses-Pipeline/blob/main/images/message_category_count.png)
 ![image3](https://github.com/blessokeke/Disaster-Responses-Pipeline/blob/main/images/message_category_distribution.png)
+![image3](https://github.com/blessokeke/Disaster-Responses-Pipeline/blob/main/images/message_genre.png)
 
