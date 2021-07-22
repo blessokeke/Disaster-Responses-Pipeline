@@ -37,7 +37,7 @@ Many thanks to Udacity for giving me an opportunity to try out real world proble
 
 This project was completed as part of the [Udacity Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025) program.
 
-## Results
+### Results
 Below are some visuals from my web app.
 ![image2](https://github.com/blessokeke/Disaster-Responses-Pipeline/blob/main/images/message_category_count.png)
 ![image3](https://github.com/blessokeke/Disaster-Responses-Pipeline/blob/main/images/message_category_distribution.png)
