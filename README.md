@@ -31,9 +31,14 @@ To run the python scripts, follow the instructions below:
 2. Open another terminal window and type `env|grep WORK`. The output would look like so `viewxxxxxxxx`
 3. Open a new web brower window and type `https://SPACEID-3001.SPACEDOMAIN`. Insert your SPACEID and SPACEDOMAIN from step 4 above to view the app.
 
+
 ### Acknowledgment
 Many thanks to Udacity for giving me an opportunity to try out real world problems. Thanks to the udacity mentors for their support as well as Data Scientists who have inspired and provided insights to me through Github and StackOverflow.
 
 This project was completed as part of the [Udacity Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025) program.
 
+## Results
+Below are some visuals from my web app.
+![image2](https://github.com/blessokeke/Disaster-Responses-Pipeline/blob/main/images/message_category_count.png)
+![image3](https://github.com/blessokeke/Disaster-Responses-Pipeline/blob/main/images/message_category_distribution.png)
 
