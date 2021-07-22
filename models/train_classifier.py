@@ -33,7 +33,8 @@ def load_data(database_filepath):
     """
     
     # load data from database
-    engine = create_engine('sqlite:///' + database_filepath)
+    engine = create_engine('sqlite:///{}'.format(database_filepath))
+    #engine = create_engine('sqlite:///' + database_filepath)
     
     df = pd.read_sql_table(database_filepath,engine)
     
@@ -120,7 +121,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     print('The model accuracy is {:.2f}'.format(model_accuracy))
     
     #print classifcation report ie. f1 score, precison and recall for test set
-    print(classfication_report(Y_test, y_pred, target_names= category_names))
+    print(classification_report(Y_test, y_pred, target_names= category_names))
     
 
 def save_model(model,model_filepath):
